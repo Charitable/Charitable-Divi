@@ -1,14 +1,14 @@
-# Copyright (C) 2015 WP Charitable
+# Copyright (C) 2016 WP Charitable
 # This file is distributed under the same license as the Charitable - Divi Connect package.
 msgid ""
 msgstr ""
 "Project-Id-Version: Charitable - Divi Connect 1.0.0\n"
 "Report-Msgid-Bugs-To: https://www.wpcharitable.com/\n"
-"POT-Creation-Date: 2015-12-19 04:50:42+00:00\n"
+"POT-Creation-Date: 2016-05-06 06:12:20+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
 "Last-Translator: WP-Translations (http://wp-translations.org/)\n"
 "Language-Team: WP-Translations <wpt@wp-translations.org>\n"
 "X-Generator: grunt-wp-i18n 0.4.9\n"
@@ -24,21 +24,287 @@ msgstr ""
 "X-Poedit-Bookmarks: \n"
 "X-Textdomain-Support: yes\n"
 
-#: includes/class-charitable-extension-activation.php:45
-msgid "This plugin"
-msgstr ""
-
+#: includes/admin/class-charitable-divi-theme-activation.php:52
 #: includes/class-charitable-extension-activation.php:81
 msgid "activate it"
 msgstr ""
 
+#: includes/admin/class-charitable-divi-theme-activation.php:55
 #: includes/class-charitable-extension-activation.php:84
 msgid "install it"
 msgstr ""
 
-#: includes/class-charitable-divi.php:246
-#: includes/class-charitable-divi.php:257
+#: includes/admin/customizer/class-charitable-divi-customizer.php:69
+msgid "Design Options"
+msgstr ""
+
+#: includes/admin/customizer/class-charitable-divi-customizer.php:103
+msgid "Campaign block background colour"
+msgstr ""
+
+#: includes/admin/customizer/class-charitable-divi-customizer.php:116
+msgid "How is the percent raised displayed in the campaign grid?"
+msgstr ""
+
+#: includes/admin/customizer/class-charitable-divi-customizer.php:118
+#: includes/admin/customizer/class-charitable-divi-customizer.php:137
+msgid "Bar Counter"
+msgstr ""
+
+#: includes/admin/customizer/class-charitable-divi-customizer.php:119
+#: includes/admin/customizer/class-charitable-divi-customizer.php:138
+msgid "Circle Counter"
+msgstr ""
+
+#: includes/admin/customizer/class-charitable-divi-customizer.php:120
+#: includes/admin/customizer/class-charitable-divi-customizer.php:140
+#: includes/admin/customizer/class-charitable-divi-customizer.php:158
+msgid "Text (no animation)"
+msgstr ""
+
+#: includes/admin/customizer/class-charitable-divi-customizer.php:121
+#: includes/admin/customizer/class-charitable-divi-customizer.php:141
+#: includes/admin/customizer/class-charitable-divi-customizer.php:159
+msgid "Not displayed"
+msgstr ""
+
+#: includes/admin/customizer/class-charitable-divi-customizer.php:135
+msgid "How is the percent raised displayed on single campaigns?"
+msgstr ""
+
+#: includes/admin/customizer/class-charitable-divi-customizer.php:139
+msgid "Number Counter"
+msgstr ""
+
+#: includes/admin/customizer/class-charitable-divi-customizer.php:155
+msgid "How is the time left displayed?"
+msgstr ""
+
+#: includes/admin/customizer/class-charitable-divi-customizer.php:157
+msgid "Countdown"
+msgstr ""
+
+#: includes/class-charitable-divi.php:282
+msgid "Campaign After Content"
+msgstr ""
+
+#: includes/class-charitable-divi.php:283
+msgid "Displayed below the campaign's content, but above the comment section."
+msgstr ""
+
+#: includes/class-charitable-divi.php:369
+#: includes/class-charitable-divi.php:380
 msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: includes/class-charitable-extension-activation.php:45
+msgid "This plugin"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaign-stats-module.php:6
+msgid "Campaign Stats"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaign-stats-module.php:30
+#: includes/modules/class-charitable-divi-campaigns-module.php:36
+msgid "Text"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaign-stats-module.php:53
+#: includes/modules/class-charitable-divi-campaigns-module.php:83
+msgid "Text Color"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaign-stats-module.php:57
+#: includes/modules/class-charitable-divi-campaigns-module.php:87
+msgid "Dark"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaign-stats-module.php:58
+#: includes/modules/class-charitable-divi-campaigns-module.php:88
+msgid "Light"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaign-stats-module.php:60
+#: includes/modules/class-charitable-divi-campaigns-module.php:90
+msgid ""
+"Here you can choose the value of your text. If you are working with a dark "
+"background, then your text should be set to light. If you are working with "
+"a light background, then your text should be dark."
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaign-stats-module.php:63
+msgid "Text Orientation"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaign-stats-module.php:67
+msgid "This controls the how your text is aligned within the module."
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaign-stats-module.php:70
+msgid "Content"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaign-stats-module.php:73
+msgid "Here you can create the content that will be used within the module."
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaign-stats-module.php:76
+msgid "Max Width"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaign-stats-module.php:90
+#: includes/modules/class-charitable-divi-campaigns-module.php:163
+msgid "Disable on"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaign-stats-module.php:93
+#: includes/modules/class-charitable-divi-campaigns-module.php:166
+msgid "Phone"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaign-stats-module.php:94
+#: includes/modules/class-charitable-divi-campaigns-module.php:167
+msgid "Tablet"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaign-stats-module.php:95
+#: includes/modules/class-charitable-divi-campaigns-module.php:168
+msgid "Desktop"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaign-stats-module.php:99
+#: includes/modules/class-charitable-divi-campaigns-module.php:172
+msgid "This will disable the module on selected devices"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaign-stats-module.php:102
+#: includes/modules/class-charitable-divi-campaigns-module.php:175
+msgid "Admin Label"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaign-stats-module.php:104
+#: includes/modules/class-charitable-divi-campaigns-module.php:177
+msgid ""
+"This will change the label of the module in the builder for easy "
+"identification."
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaign-stats-module.php:107
+#: includes/modules/class-charitable-divi-campaigns-module.php:180
+msgid "CSS ID"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaign-stats-module.php:114
+#: includes/modules/class-charitable-divi-campaigns-module.php:187
+msgid "CSS Class"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaigns-module.php:6
+msgid "Campaigns"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaigns-module.php:93
+msgid "Campaigns Number"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaigns-module.php:96
+msgid "Control how many campaigns are displayed."
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaigns-module.php:110
+msgid "Columns Number"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaigns-module.php:117
+#: includes/modules/class-charitable-divi-campaigns-module.php:118
+#: includes/modules/class-charitable-divi-campaigns-module.php:119
+msgid "%1$s Columns"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaigns-module.php:120
+msgid "1 Column"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaigns-module.php:122
+msgid "Choose how many columns to display."
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaigns-module.php:125
+msgid "Order By"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaigns-module.php:129
+msgid "Sort by Publication Date"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaigns-module.php:130
+msgid "Sort By Amount Raised"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaigns-module.php:131
+msgid "Sort By Time Remaining"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaigns-module.php:133
+msgid "Choose how your campaigns should be ordered."
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaigns-module.php:148
+msgid "Hover Overlay Color"
+msgstr ""
+
+#: includes/modules/class-charitable-divi-campaigns-module.php:154
+msgid "Hover Icon Picker"
+msgstr ""
+
+#: templates/campaign/summary-percentage-raised-number-counter.php:25
+msgid "Raised"
+msgstr ""
+
+#: templates/campaign/summary-time-left-countdown.php:16
+msgid "Day"
+msgstr ""
+
+#: templates/campaign/summary-time-left-countdown.php:16
+#: templates/campaign/summary-time-left-countdown.php:18
+msgid "Day(s)"
+msgstr ""
+
+#: templates/campaign/summary-time-left-countdown.php:21
+msgid "Hrs"
+msgstr ""
+
+#: templates/campaign/summary-time-left-countdown.php:21
+#: templates/campaign/summary-time-left-countdown.php:23
+msgid "Hour(s)"
+msgstr ""
+
+#: templates/campaign/summary-time-left-countdown.php:26
+msgid "Min"
+msgstr ""
+
+#: templates/campaign/summary-time-left-countdown.php:26
+#: templates/campaign/summary-time-left-countdown.php:28
+msgid "Minute(s)"
+msgstr ""
+
+#: templates/campaign/summary-time-left-countdown.php:31
+msgid "Sec"
+msgstr ""
+
+#: templates/campaign/summary-time-left-countdown.php:31
+#: templates/campaign/summary-time-left-countdown.php:33
+msgid "Second(s)"
+msgstr ""
+
+#: templates/single-campaign.php:57
+msgid "Pages:"
+msgstr ""
+
+#: includes/admin/class-charitable-divi-theme-activation.php:58
+msgctxt "Plugin requires Divi! Please install/activate it to continue!"
+msgid "%s requires Divi! Please %s to continue!"
 msgstr ""
 
 #: includes/class-charitable-extension-activation.php:87
