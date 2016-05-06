@@ -1,0 +1,228 @@
+.charitable-campaign-featured-image {
+    float: left;
+    max-width: 65%;
+}
+
+.campaign-summary {
+    float: right;
+    padding: 0;
+    width: 240px;
+    max-width: 35%;
+    border: none;
+
+    .campaign-summary-item {
+        float: none;
+        width: 100%;
+        padding: 0 0 15px;
+        margin: 0 0 15px 15px;
+    }
+
+    .campaign-raised-circle-counter {
+        max-width: 180px;
+    }
+
+    .campaign-percentage-display-counter {
+        border: none;
+    }
+}
+
+.charitable-campaign-summary-wrapper {
+    padding: 30px;
+    overflow: auto;
+}
+
+.single-campaign {
+    .entry-content {
+        clear: both;
+    }
+
+    .campaign-description {
+        margin: 30px 0;
+    }
+
+    &.et_full_width_page {
+        .charitable-campaign-featured-image {
+            float: left;
+            max-width: 65%;
+        }
+
+        .campaign-summary {
+            float: left;
+            width: 35%;
+            padding-left: 30px;
+            margin-bottom: 0;
+            text-align: center;
+
+            .campaign-donation {
+                margin: 15px 0 0;
+                padding-bottom: 0;
+            }
+        }
+
+        .campaign-summary-item {
+            width: 100%;
+            margin: 0;
+            padding: 15px 0 0 0;
+            border: none;
+
+            &:after {
+                content: "";
+                display: block;
+                width: 50px;
+                margin: 15px auto 0 auto;
+                height: 1px;
+                background-color: #efefef;
+            }
+
+            span {
+                font-size: 1.5em;
+            }
+
+            &.campaign-raised-counter span,
+            span.goal-amount {
+                font-size: 1em;
+            }
+
+            &.campaign-raised-counter:after, 
+            &:last-of-type:after {
+                display: none;
+                margin-bottom: 15px;
+            }
+
+            &.campaign-raised-counter {
+                max-width: 200px;
+                padding-top: 0;
+                margin: 0 auto 15px auto; 
+
+                .percent p {
+                    font-size: 2em;
+                }
+            }     
+
+            &.campaign-raised-number-counter {
+                .percent {
+                    height: auto;
+
+                    p {
+                        line-height: 1em;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            &.campaign-raised-circle-counter {
+                max-width: 160px;
+            }
+
+            &.et_pb_countdown_timer {
+                margin: 0 auto;
+
+                .value {
+                    font-size: 1.5em;
+                    line-height: 1em;
+                }
+
+                .label {
+                    padding-top: 0.5em;
+                    font-size: 0.9em;
+                    line-height: 1em;
+                }
+
+                .sep {
+                    top: -1.65em;
+
+                    p {
+                        font-size: 1.5em;
+                        line-height: 1em;
+                    }
+                }
+            }
+        }
+
+        #sidebar {
+            width: 100%;
+            margin: 2em 0 0;
+
+            ol, 
+            ul {
+                padding: 0;
+                list-style: none;
+            }
+
+            .donors-list {
+                .donor {
+                    display: inline-block;
+                    width: 150px;
+                    padding: 0 15px 15px 0;
+                    border: none;
+                }
+
+                .donor-name,
+                .donor-location,
+                .donor-donation-amount {
+                    margin-top: 0;
+                }
+            }
+
+            .widgettitle {
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
+
+.campaign-loop.campaign-grid {
+    .campaign.hentry {
+        padding: 0;
+
+        > *:not(a),
+        h3 {
+            padding: 0 15px;
+            margin-bottom: 15px;
+        }
+
+        .campaign-donation-stats {
+            margin: 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            overflow: auto;   
+
+            &.campaign-percentage-display-circle-counter {
+                position: relative;
+
+                > p {
+                    min-height: 52px;
+                    margin-left: 67px;                    
+                }
+            }         
+        }        
+
+        .campaign-raised-circle-counter {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            width: 52px;
+            margin: 0;
+
+            p {
+                width: 100%;
+            }
+
+            .percent p {
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+.et_pb_bg_layout_dark {
+    .campaign-loop {
+        .campaign.hentry {
+            border-color: rgba(255, 255, 255, 0.1);
+
+            .campaign-donation-stats {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }   
+    }
+}
