@@ -9,7 +9,7 @@
  * @category    Core
  * @package     Charitable Divi Connect
  * @subpackage  Functions
- * @version     1.0.0
+ * @version     0.1.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  * reason to instantiate a new object, though you can do so if you're stubborn :)
  *
  * @return  Charitable_Divi
- * @since   1.0.0
+ * @since   0.1.0
  */
 function charitable_divi() {
     return Charitable_Divi::get_instance();
@@ -33,7 +33,7 @@ function charitable_divi() {
  * @param   string|string[] $template_name A single template name or an ordered array of template.
  * @param   mixed[] $args Optional array of arguments to pass to the view.
  * @return  Charitable_Divi_Template
- * @since   1.0.0
+ * @since   0.1.0
  */
 function charitable_divi_template( $template_name, array $args = array() ) {
     if ( empty( $args ) ) {

@@ -3,7 +3,7 @@
  * Charitable Divi Template Functions. 
  * 
  * @package     Charitable Divi/Functions/Templates
- * @version     1.0.0
+ * @version     0.1.0
  * @author      Eric Daams
  * @copyright   Copyright (c) 2015, Studio 164a
  * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License  
@@ -17,7 +17,7 @@ if ( ! function_exists( 'charitable_divi_template_campaign_featured_image' ) ) :
      * Display the featured image for the campaign.
      *
      * @return  boolean True if the template was displayed. False otherwise.
-     * @since   1.0.0
+     * @since   0.1.0
      */
     function charitable_divi_template_campaign_featured_image() {
         if ( ! has_post_thumbnail() ) {
@@ -38,7 +38,7 @@ if ( ! function_exists( 'charitable_divi_template_campaign_summary' ) ) :
      *
      * @param   Charitable_Campaign $campaign
      * @return  true
-     * @since   1.0.0
+     * @since   0.1.0
      */
     function charitable_divi_template_campaign_summary( $campaign ) {
         charitable_divi_template( 'campaign/summary.php', array( 'campaign' => $campaign ) );
@@ -54,7 +54,7 @@ if ( ! function_exists( 'charitable_divi_template_campaign_percentage_raised' ) 
      *
      * @param   Charitable_Campaign $campaign
      * @return  boolean     True if the template was displayed. False otherwise.
-     * @since   1.0.0
+     * @since   0.1.0
      */
     function charitable_divi_template_campaign_percentage_raised( $campaign ) {
         if ( ! $campaign->has_goal() ) {
@@ -86,7 +86,7 @@ if ( ! function_exists( 'charitable_divi_template_campaign_time_left' ) ) :
      *
      * @param   Charitable_Campaign $campaign
      * @return  boolean True if the template was displayed. False otherwise.
-     * @since   1.0.0
+     * @since   0.1.0
      */
     function charitable_divi_template_campaign_time_left( $campaign ) {
         if ( $campaign->is_endless() ) {
@@ -119,7 +119,7 @@ if ( ! function_exists( 'charitable_divi_template_campaign_loop_donation_stats' 
      *
      * @param   Charitable_Campaign $campaign
      * @return  void
-     * @since   1.0.0
+     * @since   0.1.0
      */
     function charitable_divi_template_campaign_loop_donation_stats( $campaign ) {
         charitable_divi_template( 'campaign-loop/donation-stats.php', array( 'campaign' => $campaign ) );    

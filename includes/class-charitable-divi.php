@@ -7,7 +7,7 @@
  * @package     Charitable Divi Connect
  * @copyright   Copyright (c) 2015, Eric Daams  
  * @license     http://opensource.org/licenses/gpl-1.0.0.php GNU Public License
- * @since       1.0.0
+ * @since       0.1.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -17,14 +17,14 @@ if ( ! class_exists( 'Charitable_Divi' ) ) :
 /**
  * Charitable_Divi
  *
- * @since   1.0.0
+ * @since   0.1.0
  */
 class Charitable_Divi {
 
     /**
      * @var string
      */
-    const VERSION = '1.0.0';
+    const VERSION = '0.1.1';
 
     /**
      * @var string  A date in the format: YYYYMMDD
@@ -74,7 +74,7 @@ class Charitable_Divi {
      * Create class instance. 
      * 
      * @return  void
-     * @since   1.0.0
+     * @since   0.1.0
      */
     public function __construct( $plugin_file ) {
         $this->plugin_file      = $plugin_file;
@@ -88,7 +88,7 @@ class Charitable_Divi {
      * Returns the original instance of this class. 
      * 
      * @return  Charitable
-     * @since   1.0.0
+     * @since   0.1.0
      */
     public static function get_instance() {
         return self::$instance;
@@ -101,7 +101,7 @@ class Charitable_Divi {
      * 
      * @return  void
      * @access  public
-     * @since   1.0.0
+     * @since   0.1.0
      */
     public function start() {
         // If we've already started (i.e. run this function once before), do not pass go. 
@@ -135,7 +135,7 @@ class Charitable_Divi {
      * 
      * @return  void
      * @access  private
-     * @since   1.0.0
+     * @since   0.1.0
      */
     private function load_dependencies() {   
         $includes_path = $this->get_path( 'includes' );
@@ -149,7 +149,7 @@ class Charitable_Divi {
      *
      * @return  void
      * @access  private
-     * @since   1.0.0
+     * @since   0.1.0
      */
     private function maybe_start_admin() {
         if ( ! is_admin() ) {
@@ -165,7 +165,7 @@ class Charitable_Divi {
      *
      * @return  void
      * @access  private
-     * @since   1.0.0
+     * @since   0.1.0
      */
     private function maybe_start_public() {
         if ( is_admin() ) {
@@ -183,7 +183,7 @@ class Charitable_Divi {
      *
      * @return  void
      * @access  private
-     * @since   1.0.0
+     * @since   0.1.0
      */
     private function setup_licensing() {
         charitable_get_helper( 'licenses' )->register_licensed_product( 
@@ -199,7 +199,7 @@ class Charitable_Divi {
      *
      * @return  void
      * @access  private
-     * @since   1.0.0
+     * @since   0.1.0
      */
     private function setup_i18n() {
         if ( class_exists( 'Charitable_i18n' ) ) {
@@ -215,7 +215,7 @@ class Charitable_Divi {
      *
      * @return  void
      * @access  private
-     * @since   1.0.0
+     * @since   0.1.0
      */
     private function maybe_upgrade() {
         $db_version = get_option( 'charitable_divi_version' );
@@ -234,7 +234,7 @@ class Charitable_Divi {
      *
      * @return  void
      * @access  private
-     * @since   1.0.0
+     * @since   0.1.0
      */
     private function attach_hooks_and_filters() {
         add_filter( 'charitable_customizer_fields', array( Charitable_Divi_Customizer::get_instance(), 'add_customizer_settings' ) );
@@ -248,7 +248,7 @@ class Charitable_Divi {
      *
      * @return  string
      * @access  public
-     * @since   1.0.0
+     * @since   0.1.0
      */
     public function set_divi_highlight_colour() {
         return et_get_option( 'accent_color', '#2ea3f2' );
@@ -259,7 +259,7 @@ class Charitable_Divi {
      *
      * @return  void
      * @access  public
-     * @since   1.0.0
+     * @since   0.1.0
      */
     public function load_divi_modules() {
         // require_once( $this->get_path( 'includes' ) . 'modules/class-charitable-divi-campaigns-module.php' );
@@ -274,7 +274,7 @@ class Charitable_Divi {
      *
      * @return  void
      * @access  public
-     * @since   1.0.0
+     * @since   0.1.0
      */
     public function register_widget_area() {
         register_sidebar( array(
@@ -293,7 +293,7 @@ class Charitable_Divi {
      *
      * @return  bool
      * @access  public
-     * @since   1.0.0
+     * @since   0.1.0
      */
     public function is_start() {
         return current_filter() == 'charitable_divi_start';
@@ -304,7 +304,7 @@ class Charitable_Divi {
      * 
      * @return  bool
      * @access  public
-     * @since   1.0.0
+     * @since   0.1.0
      */
     public function started() {
         return did_action( 'charitable_divi_start' ) || current_filter() == 'charitable_divi_start';
@@ -315,7 +315,7 @@ class Charitable_Divi {
      *
      * @return  string
      * @access  public
-     * @since   1.0.0
+     * @since   0.1.0
      */
     public function get_version() {
         return self::VERSION;
@@ -327,7 +327,7 @@ class Charitable_Divi {
      * @param   string $path            // If empty, returns the path to the plugin.
      * @param   bool $absolute_path     // If true, returns the file system path. If false, returns it as a URL.
      * @return  string
-     * @since   1.0.0
+     * @since   0.1.0
      */
     public function get_path($type = '', $absolute_path = true ) {      
         $base = $absolute_path ? $this->directory_path : $this->directory_url;
@@ -361,7 +361,7 @@ class Charitable_Divi {
      *
      * This class is specifically designed to be instantiated once. You can retrieve the instance using charitable()
      *
-     * @since   1.0.0
+     * @since   0.1.0
      * @access  public
      * @return  void
      */
@@ -372,7 +372,7 @@ class Charitable_Divi {
     /**
      * Disable unserializing of the class. 
      *
-     * @since   1.0.0
+     * @since   0.1.0
      * @access  public
      * @return  void
      */

@@ -8,7 +8,7 @@
  * @subpackage  Charitable Divi Connect/Upgrade
  * @copyright   Copyright (c) 2015, Eric Daams  
  * @license     http://opensource.org/licenses/gpl-1.0.0.php GNU Public License
- * @since       1.0.0
+ * @since       0.1.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -19,7 +19,7 @@ if ( ! class_exists( 'Charitable_Divi_Upgrade' ) ) :
  * Charitable_Divi_Upgrade
  *
  * @see         Charitable_Upgrade
- * @since       1.0.0
+ * @since       0.1.0
  */
 class Charitable_Divi_Upgrade extends Charitable_Upgrade {
 
@@ -55,7 +55,7 @@ class Charitable_Divi_Upgrade extends Charitable_Upgrade {
      * @return  void
      * @static
      * @access  public
-     * @since   1.0.0
+     * @since   0.1.0
      */
     public static function upgrade_from( $db_version, $edge_version ) {
 

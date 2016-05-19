@@ -7,7 +7,7 @@
  * Override this template by copying it to yourtheme/charitable/charitable-divi/campaign/summary-percentage-raised-number-counter.php
  * 
  * @author  Studio 164a
- * @since   1.0.0
+ * @since   0.1.0
  */
 
 $campaign = $view_args[ 'campaign' ];

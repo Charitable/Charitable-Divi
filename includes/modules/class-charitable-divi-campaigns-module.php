@@ -58,7 +58,7 @@ class Charitable_Divi_Campaigns_Module extends ET_Builder_Module {
      *
      * @return  array[] $fields
      * @access  public
-     * @since   1.0.0     
+     * @since   0.1.0     
      */
     function get_fields() {
         $fields = array(

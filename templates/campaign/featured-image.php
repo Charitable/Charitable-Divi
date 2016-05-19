@@ -5,7 +5,7 @@
  * Override this template by copying it to yourtheme/charitable/charitable-divi/campaign/featured-image.php
  * 
  * @author  Studio 164a
- * @since   1.0.0
+ * @since   0.1.0
  */
 
 $width = (int) apply_filters( 'et_pb_index_blog_image_width', 1080 );

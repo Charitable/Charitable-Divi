@@ -2,7 +2,7 @@
 /**
  * Charitable Divi Connect template
  *
- * @version     1.0.0
+ * @version     0.1.0
  * @package     Charitable Divi Connect/Classes/Charitable_Divi_Template
  * @author      Eric Daams
  * @copyright   Copyright (c) 2015, Studio 164a
@@ -16,7 +16,7 @@ if ( ! class_exists( 'Charitable_Divi_Template' ) ) :
 /**
  * Charitable_Divi_Template
  *
- * @since       1.0.0
+ * @since       0.1.0
  */
 class Charitable_Divi_Template extends Charitable_Template {
     
@@ -25,7 +25,7 @@ class Charitable_Divi_Template extends Charitable_Template {
      *
      * @return  string
      * @access  public
-     * @since   1.0.0
+     * @since   0.1.0
      */
     public function get_theme_template_path() {
         return trailingslashit( apply_filters( 'charitable_divi_theme_template_path', 'charitable/charitable-divi' ) );
@@ -36,7 +36,7 @@ class Charitable_Divi_Template extends Charitable_Template {
      *
      * @return  string
      * @access  public
-     * @since   1.0.0
+     * @since   0.1.0
      */
     public function get_base_template_path() {
         return charitable_divi()->get_path( 'templates' );
@@ -47,7 +47,7 @@ class Charitable_Divi_Template extends Charitable_Template {
      *
      * @return  string[]
      * @access  protected
-     * @since   1.0.0
+     * @since   0.1.0
      */
     protected function get_theme_template_options() {
         $options = array();

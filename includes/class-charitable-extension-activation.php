@@ -3,7 +3,7 @@
  * Activation handler for Charitable extensions.
  *
  * @package     Charitable/Activation Handler
- * @since       1.0.0
+ * @since       0.1.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 /**
  * Charitable_Extension_Activation
  *
- * @since       1.0.0
+ * @since       0.1.0
  */
 class Charitable_Extension_Activation {
 
@@ -21,7 +21,7 @@ class Charitable_Extension_Activation {
      * Setup the activation class
      *
      * @access      public
-     * @since       1.0.0
+     * @since       0.1.0
      * @return      void
      */
     public function __construct( $plugin_path, $plugin_file ) {
@@ -61,7 +61,7 @@ class Charitable_Extension_Activation {
      *
      * @return      void
      * @access      public
-     * @since       1.0.0
+     * @since       0.1.0
      */
     public function run() {
         add_action( 'admin_notices', array( $this, 'missing_charitable_notice' ) );
@@ -73,7 +73,7 @@ class Charitable_Extension_Activation {
      *     
      * @return      string The notice to display
      * @access      public
-     * @since       1.0.0
+     * @since       0.1.0
      */
     public function missing_charitable_notice() {
         if( $this->has_charitable ) {

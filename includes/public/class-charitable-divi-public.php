@@ -3,7 +3,7 @@
  * Charitable Divi Public class. 
  *
  * @package     Charitable Divi/Classes/Charitable_Divi_Public
- * @version     1.0.0
+ * @version     0.1.0
  * @author      Eric Daams
  * @copyright   Copyright (c) 2015, Studio 164a
  * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License  
@@ -17,7 +17,7 @@ if ( ! class_exists( 'Charitable_Divi_Public' ) ) :
  * Charitable Public class. 
  *
  * @final
- * @since       1.0.0
+ * @since       0.1.0
  */
 final class Charitable_Divi_Public {
 
@@ -35,7 +35,7 @@ final class Charitable_Divi_Public {
      *
      * @return  Charitable_Divi_Public
      * @access  public
-     * @since   1.0.0
+     * @since   0.1.0
      */
     public static function get_instance() {
         if ( is_null( self::$instance ) ) {
@@ -49,7 +49,7 @@ final class Charitable_Divi_Public {
      * Set up the class. 
      *
      * @access  private
-     * @since   1.0.0
+     * @since   0.1.0
      */
     private function __construct() {
         add_filter( 'template_include', array( $this, 'load_default_campaign_template' ) );
@@ -70,7 +70,7 @@ final class Charitable_Divi_Public {
      *
      * @return  string $template
      * @access  public
-     * @since   1.0.0
+     * @since   0.1.0
      */
     public function load_default_campaign_template( $template ) {
         if ( ! is_singular( Charitable::CAMPAIGN_POST_TYPE ) ) {
@@ -93,7 +93,7 @@ final class Charitable_Divi_Public {
      * @param   array $classes
      * @return  array $classes
      * @access  public
-     * @since   1.0.0
+     * @since   0.1.0
      */
     public function set_campaign_body_class( $classes ) {
         if ( ! is_singular( Charitable::CAMPAIGN_POST_TYPE ) ) {
@@ -120,9 +120,8 @@ final class Charitable_Divi_Public {
                 $classes[] = 'et_left_sidebar';
                 break;
 
-            case 'full-width' : 
+            default :
                 $classes[] = 'et_full_width_page';
-                break;
 
         }
 
@@ -134,7 +133,7 @@ final class Charitable_Divi_Public {
      *
      * @return  void
      * @access  public
-     * @since   1.0.0
+     * @since   0.1.0
      */
     public function load_dependencies() {
 
@@ -149,7 +148,7 @@ final class Charitable_Divi_Public {
      *
      * @return  void
      * @access  public
-     * @since   1.0.0
+     * @since   0.1.0
      */
     public function unhook_default_templates() {
         add_filter( 'charitable_use_campaign_template', '__return_false' );
@@ -167,7 +166,7 @@ final class Charitable_Divi_Public {
      *
      * @return  void
      * @access  public
-     * @since   1.0.0
+     * @since   0.1.0
      */
     public function register_styles() {          
 
@@ -184,7 +183,7 @@ final class Charitable_Divi_Public {
      *
      * @return  array
      * @access  private
-     * @since   1.0.0
+     * @since   0.1.0
      */
     private function get_asset_versions() {
 

@@ -3,7 +3,7 @@
  * Sets up translations for Charitable Divi Connect.
  *
  * @package     Charitable/Classes/Charitable_i18n
- * @version     1.0.0
+ * @version     0.1.0
  * @author      Eric Daams
  * @copyright   Copyright (c) 2015, Studio 164a
  * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License  
@@ -22,7 +22,7 @@ if ( ! class_exists( 'Charitable_Divi_i18n' ) ) :
 /**
  * Charitable_Divi_i18n
  *
- * @since       1.0.0
+ * @since       0.1.0
  */
 class Charitable_Divi_i18n extends Charitable_i18n {
 
@@ -35,7 +35,7 @@ class Charitable_Divi_i18n extends Charitable_i18n {
      * Set up the class. 
      *
      * @access  protected
-     * @since   1.0.0
+     * @since   0.1.0
      */
     protected function __construct() {
         $this->languages_directory = apply_filters( 'charitable_divi_languages_directory', 'charitable-divi/languages' );

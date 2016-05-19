@@ -3,7 +3,7 @@
  * The class responsible for adding & saving extra settings in the Charitable admin.
  *
  * @package     Charitable Divi Connect/Classes/Charitable_Divi_Admin
- * @version     1.0.0
+ * @version     0.1.0
  * @author      Eric Daams
  * @copyright   Copyright (c) 2015, Studio 164a
  * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License  
@@ -17,7 +17,7 @@ if ( ! class_exists( 'Charitable_Divi_Admin' ) ) :
 /**
  * Charitable_Divi_Admin
  *
- * @since       1.0.0
+ * @since       0.1.0
  */
 class Charitable_Divi_Admin {
 
@@ -25,7 +25,7 @@ class Charitable_Divi_Admin {
      * @var     Charitable_Divi_Admin
      * @access  private
      * @static
-     * @since   1.0.0
+     * @since   0.1.0
      */
     private static $instance = null;
 
@@ -33,7 +33,7 @@ class Charitable_Divi_Admin {
      * Create class object. Private constructor. 
      * 
      * @access  private
-     * @since   1.0.0
+     * @since   0.1.0
      */
     private function __construct() {
     }
@@ -43,7 +43,7 @@ class Charitable_Divi_Admin {
      *
      * @access  public
      * @static
-     * @since   1.0.0
+     * @since   0.1.0
      */
     public static function get_instance() {
         if ( is_null( self::$instance ) ) {
@@ -59,7 +59,7 @@ class Charitable_Divi_Admin {
      * @param   string[] $links
      * @return  string[]
      * @access  public
-     * @since   1.0.0
+     * @since   0.1.0
      */
     // public function add_plugin_action_links( $links ) {
     //     $links[] = '<a href="' . admin_url( 'admin.php?page=charitable-settings&tab=extensions' ) . '">' . __( 'Settings', 'charitable-newsletter-connect' ) . '</a>';

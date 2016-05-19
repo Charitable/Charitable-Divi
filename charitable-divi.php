@@ -3,11 +3,11 @@
  * Plugin Name: 		Charitable - Divi Connect
  * Plugin URI: 			
  * Description: 		
- * Version: 			1.0.0
+ * Version: 			0.1.1
  * Author: 				WP Charitable
  * Author URI: 			https://www.wpcharitable.com
  * Requires at least: 	4.2
- * Tested up to: 		4.4
+ * Tested up to: 		4.5.2
  *
  * Text Domain: 		charitable-divi
  * Domain Path: 		/languages/
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  * Load plugin class, but only if Charitable is found and activated.
  *
  * @return 	void
- * @since 	1.0.0
+ * @since 	0.1.0
  */
 function charitable_divi_load() {	
 

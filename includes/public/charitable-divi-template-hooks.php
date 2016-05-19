@@ -5,7 +5,7 @@
  * Action/filter hooks used for Charitable Divi functions/templates
  * 
  * @package     Charitable Divi/Functions/Templates
- * @version     1.0.0
+ * @version     0.1.0
  * @author      Eric Daams
  * @copyright   Copyright (c) 2015, Studio 164a
  * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License  
