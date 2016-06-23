@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * Displays a single campaign in Divi.
  *
@@ -12,7 +12,7 @@
  * @version 0.1.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly
 
 get_header();
 
@@ -25,71 +25,71 @@ $campaign = charitable_get_current_campaign();
 
 ?>
 <div id="main-content">
-    <div class="container">
-        <div id="content-area" class="clearfix">   
-            <div id="left-area">         
-            <?php while ( have_posts() ) : the_post(); ?>
-                <?php if (et_get_option('divi_integration_single_top') <> '' && et_get_option('divi_integrate_singletop_enable') == 'on') echo(et_get_option('divi_integration_single_top')); ?>
+	<div class="container">
+		<div id="content-area" class="clearfix">   
+			<div id="left-area">
+			<?php while ( have_posts() ) : the_post(); ?>
+				<?php if (et_get_option('divi_integration_single_top') <> '' && et_get_option('divi_integrate_singletop_enable') == 'on') echo(et_get_option('divi_integration_single_top')); ?>
 
-                <?php
-                    $et_pb_has_comments_module = has_shortcode( get_the_content(), 'et_pb_comments' );
-                    $additional_class = $et_pb_has_comments_module ? ' et_pb_no_comments_section' : '';
-                ?>                
-                <article id="post-<?php the_ID(); ?>" <?php post_class( 'et_pb_post' . $additional_class ); ?>>    
-                    <div class="et_post_meta_wrapper">
-                        <h1 class="entry-title"><?php the_title() ?></h1>
-                        <?php
-                        
-                        if ( ! post_password_required() ) :
+				<?php
+					$et_pb_has_comments_module = has_shortcode( get_the_content(), 'et_pb_comments' );
+					$additional_class = $et_pb_has_comments_module ? ' et_pb_no_comments_section' : '';
+				?>                
+				<article id="post-<?php the_ID(); ?>" <?php post_class( 'et_pb_post' . $additional_class ); ?>>    
+					<div class="et_post_meta_wrapper">
+						<h1 class="entry-title"><?php the_title() ?></h1>
+						<?php
 
-                            do_action( 'charitable_campaign_content_before', $campaign );                            
-                        
-                        endif;
-                        
-                        ?>
-                    </div> <!-- .et_post_meta_wrapper -->                    
-                    <div class="entry-content">
-                        <?php
-                        do_action( 'et_before_content' );
+						if ( ! post_password_required() ) :
 
-                        the_content();
+							do_action( 'charitable_campaign_content_before', $campaign );
 
-                        wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'Divi' ), 'after' => '</div>' ) );
-                        ?>
-                    </div> <!-- .entry-content -->
-                    <?php 
+						endif;
 
-                    if ( ! post_password_required() ) :
-                        
-                        do_action( 'charitable_campaign_content_after', $campaign );
+						?>
+					</div> <!-- .et_post_meta_wrapper -->                    
+					<div class="entry-content">
+						<?php
+						do_action( 'et_before_content' );
 
-                    endif;
+						the_content();
 
-                    ?>
-                    <div class="et_post_meta_wrapper">                        
-                        <?php if ( is_active_sidebar( 'charitable_campaign' ) ) : ?>
+						wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'Divi' ), 'after' => '</div>' ) );
+						?>
+					</div> <!-- .entry-content -->
+					<?php
 
-                            <div id="sidebar" class="charitable-campaign-after">
-                                <?php dynamic_sidebar( 'charitable_campaign' ) ?>
-                            </div><!-- #sidebar -->
+					if ( ! post_password_required() ) :
 
-                        <?php endif;
-                                        
-                        if ( ( comments_open() || get_comments_number() ) && 'on' == et_get_option( 'divi_show_postcomments', 'on' ) && ! $et_pb_has_comments_module ) :
+						do_action( 'charitable_campaign_content_after', $campaign );
 
-                            comments_template( '', true );
+					endif;
 
-                        endif;
+					?>
+					<div class="et_post_meta_wrapper">                        
+						<?php if ( is_active_sidebar( 'charitable_campaign' ) ) : ?>
 
-                        ?>
-                    </div> <!-- .et_post_meta_wrapper -->
-                </article> <!-- .et_pb_post -->                         
-            <?php endwhile ?>
-            </div> <!-- #left-area -->      
-        </div> <!-- #content-area -->
-    </div> <!-- .container -->
+							<div id="sidebar" class="charitable-campaign-after">
+								<?php dynamic_sidebar( 'charitable_campaign' ) ?>
+							</div><!-- #sidebar -->
+
+						<?php endif;
+
+						if ( ( comments_open() || get_comments_number() ) && 'on' == et_get_option( 'divi_show_postcomments', 'on' ) && ! $et_pb_has_comments_module ) :
+
+							comments_template( '', true );
+
+						endif;
+
+						?>
+					</div> <!-- .et_post_meta_wrapper -->
+				</article> <!-- .et_pb_post -->                         
+			<?php endwhile ?>
+			</div> <!-- #left-area -->      
+		</div> <!-- #content-area -->
+	</div> <!-- .container -->
 </div> <!-- #main-content -->
 
-<?php 
+<?php
 
 get_footer();

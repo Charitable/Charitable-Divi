@@ -116,6 +116,19 @@ module.exports = function(grunt) {
             }
         },
 
+        // minify CSS
+        cssmin: {
+          target: {
+            files: [{
+              expand: true,
+              cwd: 'assets/css',
+              dest: 'assets/css',
+              src: ['*.css', '!*.min.css'],
+              ext: '.min.css'
+            }]
+          }
+        },
+
         // Compress build directory into <name>.zip and <name>-<version>.zip
         compress: {
             main: {
@@ -136,5 +149,5 @@ module.exports = function(grunt) {
     grunt.registerTask( 'default', 'watch' );
 
     // Build task(s).
-    grunt.registerTask( 'build', [ 'makepot',  'clean', 'copy', 'compress' ] );
+    grunt.registerTask( 'build', [ 'makepot',  'cssmin', 'clean', 'copy', 'compress' ] );
 };
