@@ -77,7 +77,7 @@ if ( ! class_exists( 'Charitable_Divi_Public' ) ) :
 				return $template;
 			}
 
-			if ( charitable_is_page( 'campaign_donation_page' ) ) {
+			if ( charitable_is_page( 'campaign_donation_page', array( 'strict' => true ) ) ) {
 				$template_name = 'campaign-donation-page.php';
 			} else {
 				$template_name = 'single-campaign.php';

@@ -3,11 +3,11 @@
  * Plugin Name: 		Charitable - Divi Connect
  * Plugin URI:
  * Description:
- * Version: 			0.2.0
+ * Version: 			0.2.1
  * Author: 				WP Charitable
  * Author URI: 			https://www.wpcharitable.com
  * Requires at least: 	4.2
- * Tested up to: 		4.5.3
+ * Tested up to: 		4.7.2
  *
  * Text Domain: 		charitable-divi
  * Domain Path: 		/languages/

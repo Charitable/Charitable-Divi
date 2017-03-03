@@ -25,7 +25,7 @@ if ( ! class_exists( 'Charitable_Divi' ) ) :
 		/**
 		 * @var string
 		 */
-		const VERSION = '0.2.0';
+		const VERSION = '0.2.1';
 
 		/**
 		 * @var string  A date in the format: YYYYMMDD
