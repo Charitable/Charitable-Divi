@@ -17,6 +17,8 @@
     max-width: 180px; }
   .campaign-summary .campaign-percentage-display-counter {
     border: none; }
+  .campaign-summary > #et-boc {
+    margin: 0 auto; }
 
 .charitable-campaign-summary-wrapper {
   padding: 30px;

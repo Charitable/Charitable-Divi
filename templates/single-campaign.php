@@ -26,7 +26,7 @@ $campaign = charitable_get_current_campaign();
 ?>
 <div id="main-content">
 	<div class="container">
-		<div id="content-area" class="clearfix">   
+		<div id="content-area" class="clearfix">
 			<div id="left-area">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php if (et_get_option('divi_integration_single_top') <> '' && et_get_option('divi_integrate_singletop_enable') == 'on') echo(et_get_option('divi_integration_single_top')); ?>
@@ -34,8 +34,8 @@ $campaign = charitable_get_current_campaign();
 				<?php
 					$et_pb_has_comments_module = has_shortcode( get_the_content(), 'et_pb_comments' );
 					$additional_class = $et_pb_has_comments_module ? ' et_pb_no_comments_section' : '';
-				?>                
-				<article id="post-<?php the_ID(); ?>" <?php post_class( 'et_pb_post' . $additional_class ); ?>>    
+				?>
+				<article id="post-<?php the_ID(); ?>" <?php post_class( 'et_pb_post' . $additional_class ); ?>>
 					<div class="et_post_meta_wrapper">
 						<h1 class="entry-title"><?php the_title() ?></h1>
 						<?php
@@ -47,7 +47,7 @@ $campaign = charitable_get_current_campaign();
 						endif;
 
 						?>
-					</div> <!-- .et_post_meta_wrapper -->                    
+					</div> <!-- .et_post_meta_wrapper -->
 					<div class="entry-content">
 						<?php
 						do_action( 'et_before_content' );
@@ -66,7 +66,7 @@ $campaign = charitable_get_current_campaign();
 					endif;
 
 					?>
-					<div class="et_post_meta_wrapper">                        
+					<div class="et_post_meta_wrapper">
 						<?php if ( is_active_sidebar( 'charitable_campaign' ) ) : ?>
 
 							<div id="sidebar" class="charitable-campaign-after">
@@ -83,9 +83,9 @@ $campaign = charitable_get_current_campaign();
 
 						?>
 					</div> <!-- .et_post_meta_wrapper -->
-				</article> <!-- .et_pb_post -->                         
+				</article> <!-- .et_pb_post -->
 			<?php endwhile ?>
-			</div> <!-- #left-area -->      
+			</div> <!-- #left-area -->
 		</div> <!-- #content-area -->
 	</div> <!-- .container -->
 </div> <!-- #main-content -->

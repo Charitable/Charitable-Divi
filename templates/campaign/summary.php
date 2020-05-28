@@ -1,6 +1,6 @@
-<?php 
+<?php
 /**
- * Displays the campaign summary. 
+ * Displays the campaign summary.
  *
  * Override this template by copying it to yourtheme/charitable/campaign/summary.php
  *
@@ -35,20 +35,20 @@ $background_colour = charitable_get_option( 'campaign_block_background_colour', 
 ?>
 <div class="charitable-campaign-summary-wrapper" style="background-color: <?php echo $background_colour ?>;">
 
-    <?php 
+    <?php
     /**
      * @hook charitable_campaign_summary_before
      */
-    do_action( 'charitable_campaign_summary_before', $campaign ); 
+    do_action( 'charitable_campaign_summary_before', $campaign );
 
     ?>
-    <div class="<?php echo $classes ?>">	
-        <?php 
+    <div class="<?php echo $classes ?>">
+        <?php
 
         /**
          * @hook charitable_campaign_summary
          */
-        do_action( 'charitable_campaign_summary', $campaign ); 
+        do_action( 'charitable_campaign_summary', $campaign );
 
         ?>
     </div>

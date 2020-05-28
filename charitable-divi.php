@@ -1,13 +1,13 @@
 <?php
 /**
  * Plugin Name: 		Charitable - Divi Connect
- * Plugin URI:
- * Description:
- * Version: 			0.2.0
+ * Plugin URI:          https://github.com/Charitable/Charitable-Divi/
+ * Description:         Customize the campaign template in Divi.
+ * Version: 			0.3.0
  * Author: 				WP Charitable
  * Author URI: 			https://www.wpcharitable.com
- * Requires at least: 	4.2
- * Tested up to: 		4.5.3
+ * Requires at least: 	5.4.1
+ * Tested up to: 		5.4.1
  *
  * Text Domain: 		charitable-divi
  * Domain Path: 		/languages/

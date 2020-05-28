@@ -1,14 +1,14 @@
-<?php 
+<?php
 /**
- * Charitable Divi Template Hooks. 
+ * Charitable Divi Template Hooks.
  *
  * Action/filter hooks used for Charitable Divi functions/templates
- * 
+ *
  * @package     Charitable Divi/Functions/Templates
  * @version     0.1.0
  * @author      Eric Daams
  * @copyright   Copyright (c) 2015, Studio 164a
- * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License  
+ * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 /**
  * Add elements before the main campaign content block.
  *
- * @see     et_divi_post_meta 
+ * @see     et_divi_post_meta
  * @see     charitable_divi_template_campaign_summary
  */
 add_action( 'charitable_campaign_content_before', 'et_divi_post_meta', 1 );

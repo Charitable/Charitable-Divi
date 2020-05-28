@@ -1,17 +1,17 @@
-<?php 
+<?php
 /**
- * Charitable Divi Template Functions. 
- * 
+ * Charitable Divi Template Functions.
+ *
  * @package     Charitable Divi/Functions/Templates
  * @version     0.1.0
  * @author      Eric Daams
  * @copyright   Copyright (c) 2015, Studio 164a
- * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License  
+ * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-if ( ! function_exists( 'charitable_divi_template_campaign_featured_image' ) ) : 
+if ( ! function_exists( 'charitable_divi_template_campaign_featured_image' ) ) :
 
     /**
      * Display the featured image for the campaign.
@@ -31,7 +31,7 @@ if ( ! function_exists( 'charitable_divi_template_campaign_featured_image' ) ) :
 
 endif;
 
-if ( ! function_exists( 'charitable_divi_template_campaign_summary' ) ) : 
+if ( ! function_exists( 'charitable_divi_template_campaign_summary' ) ) :
 
     /**
      * Display the summary section.
@@ -50,7 +50,7 @@ endif;
 if ( ! function_exists( 'charitable_divi_template_campaign_percentage_raised' ) ) :
 
     /**
-     * Display the percentage that the campaign has raised in summary block. 
+     * Display the percentage that the campaign has raised in summary block.
      *
      * @param   Charitable_Campaign $campaign
      * @return  boolean     True if the template was displayed. False otherwise.
@@ -122,8 +122,7 @@ if ( ! function_exists( 'charitable_divi_template_campaign_loop_donation_stats' 
      * @since   0.1.0
      */
     function charitable_divi_template_campaign_loop_donation_stats( $campaign ) {
-        charitable_divi_template( 'campaign-loop/donation-stats.php', array( 'campaign' => $campaign ) );    
+        charitable_divi_template( 'campaign-loop/donation-stats.php', array( 'campaign' => $campaign ) );
     }
 
 endif;
-
