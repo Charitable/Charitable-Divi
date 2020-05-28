@@ -121,11 +121,12 @@
       position: relative; }
       .campaign-loop.campaign-grid .campaign.hentry .campaign-donation-stats.campaign-percentage-display-circle-counter > p {
         min-height: 52px;
-        margin-left: 67px; }
-  .campaign-loop.campaign-grid .campaign.hentry .campaign-raised-circle-counter {
-    position: absolute;
+        margin-left: 67px;}
+  .campaign-loop.campaign-grid .campaign.hentry .campaign-raised-circle-counter .et_pb_circle_counter_inner {
+    display: inline-block;
+    /* position: absolute;
     top: 15px;
-    left: 15px;
+    left: 15px; */
     width: 52px;
     margin: 0; }
     .campaign-loop.campaign-grid .campaign.hentry .campaign-raised-circle-counter p {

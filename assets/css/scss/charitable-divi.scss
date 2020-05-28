@@ -202,14 +202,14 @@
         }
 
         .campaign-raised-circle-counter {
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            width: 52px;
-            margin: 0;
-
             p {
-                width: 100%;
+                display: inline-block;
+            }
+
+            .et_pb_circle_counter_inner {
+                display: inline-block;
+                width: 52px;
+                margin: 0;
             }
 
             .percent p {
