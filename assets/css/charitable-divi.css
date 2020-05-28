@@ -117,20 +117,19 @@
     padding: 15px;
     background-color: #f8f8f8;
     overflow: auto; }
-    .campaign-loop.campaign-grid .campaign.hentry .campaign-donation-stats.campaign-percentage-display-circle-counter {
-      position: relative; }
-      .campaign-loop.campaign-grid .campaign.hentry .campaign-donation-stats.campaign-percentage-display-circle-counter > p {
+    .campaign-loop.campaign-grid .campaign.hentry .campaign-raised-circle-counter {
+      margin: 0 auto;
+      max-width: 100%;
+       }
+      /* .campaign-loop.campaign-grid .campaign.hentry .campaign-donation-stats.campaign-percentage-display-circle-counter > p {
         min-height: 52px;
-        margin-left: 67px;}
+        margin-left: 67px;} */
   .campaign-loop.campaign-grid .campaign.hentry .campaign-raised-circle-counter .et_pb_circle_counter_inner {
     display: inline-block;
-    /* position: absolute;
-    top: 15px;
-    left: 15px; */
     width: 52px;
-    margin: 0; }
+    margin: 0 4px 0 0; }
     .campaign-loop.campaign-grid .campaign.hentry .campaign-raised-circle-counter p {
-      width: 100%; }
+      display: inline-block; }
     .campaign-loop.campaign-grid .campaign.hentry .campaign-raised-circle-counter .percent p {
       font-size: 1em; }
 
